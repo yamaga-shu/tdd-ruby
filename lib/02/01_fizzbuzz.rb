@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
-def fizzbuzz(_num)
-  '1'
+def fizzbuzz(num)
+  num.to_s
 end
