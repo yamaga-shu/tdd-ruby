@@ -1,0 +1,11 @@
+name: tdd-ruby
+services:
+  tdd-ruby:
+    container_name: tdd-ruby
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - ../:/workspace/tdd-ruby
+    stdin_open: true
+    tty: true
