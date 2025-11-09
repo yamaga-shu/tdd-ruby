@@ -12,4 +12,11 @@ class FizzBuzzTest < Minitest::Test
       assert_equal h[:expected], fizzbuzz(h[:given]), "fizzbuzz(#{h[:given]}) should be #{h[:expected]}"
     end
   end
+
+  def test_raises_for_non_integer
+    invalid_values = [nil, 'a', 1.5, [], {}, Object.new]
+    invalid_values.each do |val|
+      assert_raises(ArgumentError) { fizzbuzz(val) }
+    end
+  end
 end
