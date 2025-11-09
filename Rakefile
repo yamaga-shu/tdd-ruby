@@ -1,4 +1,5 @@
-# Rakefile
+# frozen_string_literal: true
+
 require 'rake/testtask'
 
 pattern = ENV['TEST'] || 'test/**/*_test.rb'
