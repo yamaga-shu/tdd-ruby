@@ -7,5 +7,5 @@ def to_hex(r, g, b)
 end
 
 def to_ints(hex)
-  hex.scan(/\w\w/).map(&:hex)
+  hex.scan(/[0-9a-fA-F]{2}/).map(&:hex)
 end
