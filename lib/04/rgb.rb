@@ -1,9 +1,10 @@
 # frozen_string_literal: true
 
 def to_hex(r, g, b)
-  hex_r = r.to_s(16).rjust(2, '0')
-  hex_g = g.to_s(16).rjust(2, '0')
-  hex_b = b.to_s(16).rjust(2, '0')
+  hex = '#'
+  [r, g, b].each do |n|
+    hex += n.to_s(16).rjust(2, '0')
+  end
 
-  "##{hex_r}#{hex_g}#{hex_b}"
+  hex
 end
