@@ -6,5 +6,7 @@ require_relative '../../lib/05/convert_length'
 class ConvertLengthTest < Minitest::Test
   def test_m_to_in
     assert_equal 39.37, convert_length(1, 'm', 'in')
+    assert_equal 0.38, convert_length(15, 'in', 'm')
+    assert_equal 10_670.73, convert_length(35_000, 'ft', 'm')
   end
 end
