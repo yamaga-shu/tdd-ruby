@@ -19,12 +19,11 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "ms-azuretools.vscode-docker",
-        "ms-vscode-remote.remote-containers",
         "yzhang.markdown-all-in-one",
         "hediet.vscode-drawio",
         "rebornix.ruby",
-        "mame.ruby-typeprof"
+        "mame.ruby-typeprof",
+        "soutaro.rbs-syntax"
       ]
     }
   }
