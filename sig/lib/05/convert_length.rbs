@@ -1,0 +1,7 @@
+# TypeProf 0.31.0
+
+# lib/05/convert_length.rb
+UNITS: Hash[:ft | :in | :m, Float]
+class Object
+  def convert_length: (Float, ?from: :m, ?to: :m) -> Float
+end

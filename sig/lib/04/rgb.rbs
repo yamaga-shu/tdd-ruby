@@ -1,0 +1,7 @@
+# TypeProf 0.31.0
+
+# lib/04/rgb.rb
+class Object
+  def to_hex: (Integer, Integer, Integer) -> String
+  def to_ints: (String) -> Array[Integer]
+end

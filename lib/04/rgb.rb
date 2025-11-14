@@ -7,5 +7,9 @@ def to_hex(r, g, b)
 end
 
 def to_ints(hex)
-  hex.scan(/[0-9a-fA-F]{2}/).map(&:hex)
+  hex.scan(/\h{2}/).map do |h|
+    raise TypeError, "Expected String, got #{h.class}" unless h.is_a?(String)
+
+    h.to_i(16)
+  end
 end
