@@ -2,7 +2,7 @@
 
 # test/02/fizzbuzz_test.rb
 class FizzBuzzTest < Minitest::Test
-  FizzBuzzTest::EXPECTED: Array[String]
+  EXPECTED: Array[String]
   def test_fizzbuzz_integer: -> Array[Hash[:expected | :given, Integer | String]]
   def test_raises_for_non_integer: -> Array[(Float | Hash[untyped, untyped] | Object | String | [])?]
 end

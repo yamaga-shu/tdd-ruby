@@ -1,0 +1,6 @@
+# TypeProf 0.31.0
+
+# lib/02/fizzbuzz.rb
+class Object
+  def fizzbuzz: (Integer) -> String
+end
