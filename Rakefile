@@ -10,4 +10,7 @@ Rake::TestTask.new(:test) do |t|
   t.verbose = true
 end
 
-task default: :test
+desc 'Run Steep type checking'
+task :steep do
+  sh 'steep check'
+end
