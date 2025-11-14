@@ -1,0 +1,6 @@
+# TypeProf 0.31.0
+
+# lib/06/convert_hash_syntax.rb
+class Object
+  def convert_hash_syntax: (String) -> String
+end
