@@ -15,3 +15,5 @@ gem "rbs", "~> 3.9"
 gem "typeprof", "~> 0.31.0"
 
 gem "steep", "~> 1.10"
+
+gem "ruby-lsp", "~> 0.26.3"
