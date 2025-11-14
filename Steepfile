@@ -32,9 +32,8 @@
 # end
 
 target :lib do
-  signature "sig"
+  signature 'sig'
   # ignore_signature "sig/test"
 
-  check "sig/lib/02/**/*.rb"
-  check "sig/test/02/**/*.rb"
+  check 'lib/**/*.rb'
 end
