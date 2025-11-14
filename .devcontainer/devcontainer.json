@@ -25,7 +25,8 @@
         "hediet.vscode-drawio",
         "rebornix.ruby",
         "mame.ruby-typeprof",
-        "soutaro.rbs-syntax"
+        "soutaro.rbs-syntax",
+        "soutaro.steep-vscode"
       ]
     }
   }
