@@ -36,6 +36,9 @@ jobs:
       - name: Run tests
         run: bundle exec rake test
 
+      - name: Generate RBS files
+        run: bundle exec rake typeprof
+
       - name: Run steep type checking
         run: bundle exec rake steep
         
