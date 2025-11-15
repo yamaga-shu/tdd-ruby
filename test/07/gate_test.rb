@@ -38,4 +38,12 @@ class GateTest < Minitest::Test
     @umeda.enter(ticket)
     refute @mikuni.exit(ticket)
   end
+
+  def test_exit_without_entering
+    ticket = Ticket.new(160)
+
+    assert_raises(RuntimeError, 'Invalid station') do
+      @umeda.exit(ticket)
+    end
+  end
 end
