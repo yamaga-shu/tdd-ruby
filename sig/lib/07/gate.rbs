@@ -2,7 +2,16 @@
 
 # lib/07/gate.rb
 class Gate
+  STATIONS: Array[Symbol]
+  FARES: Array[Integer]
+
+  @name: String
+
   def initialize: (String) -> void
-  def enter: (Ticket) -> nil
+  def enter: (Ticket) -> void
   def exit: (Ticket) -> bool
+
+  private
+
+  def calc_fare: (Ticket) -> Integer
 end

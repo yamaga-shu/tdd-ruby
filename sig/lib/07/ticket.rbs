@@ -2,5 +2,12 @@
 
 # lib/07/ticket.rb
 class Ticket
+  @fare: Integer
+  @stamped_at: String | nil
+
   def initialize: (Integer) -> void
+  def fare: () -> Integer
+  def stamped_at: () -> (String | nil)
+  
+  def stamp: (String) -> void
 end
