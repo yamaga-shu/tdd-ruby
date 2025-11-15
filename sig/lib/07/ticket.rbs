@@ -3,11 +3,11 @@
 # lib/07/ticket.rb
 class Ticket
   @fare: Integer
-  @stamped_at: String | nil
+  @stamped_at: Symbol | nil
 
   def initialize: (Integer) -> void
   def fare: () -> Integer
-  def stamped_at: () -> (String | nil)
+  def stamped_at: () -> (Symbol | nil)
   
-  def stamp: (String) -> void
+  def stamp: (Symbol) -> void
 end

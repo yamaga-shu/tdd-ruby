@@ -27,7 +27,7 @@ class Gate
 
     raise 'Invalid station' if from.nil? || to.nil?
 
-    distance = to - from
+    distance = (to - from).abs
 
     FARES[distance - 1]
   end
