@@ -38,4 +38,11 @@ class GateTest < Minitest::Test
     @umeda.enter(ticket)
     refute @mikuni.exit(ticket)
   end
+
+  def test_same_station_entry_exit
+    ticket = Ticket.new(160)
+
+    @umeda.enter(ticket)
+    assert @umeda.exit(ticket)
+  end
 end
