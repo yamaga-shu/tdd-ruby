@@ -1,0 +1,13 @@
+# TypeProf 0.31.0
+
+# lib/07/ticket.rb
+class Ticket
+  @fare: Integer
+  @stamped_at: Symbol | nil
+
+  def initialize: (Integer) -> void
+  def fare: () -> Integer
+  def stamped_at: () -> (Symbol | nil)
+  
+  def stamp: (Symbol) -> void
+end

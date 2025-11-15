@@ -1,0 +1,17 @@
+# TypeProf 0.31.0
+
+# lib/07/gate.rb
+class Gate
+  STATIONS: Array[Symbol]
+  FARES: Array[Integer]
+
+  @name: Symbol
+
+  def initialize: (Symbol) -> void
+  def enter: (Ticket) -> void
+  def exit: (Ticket) -> bool
+
+  private
+
+  def calc_fare: (Ticket) -> Integer
+end
