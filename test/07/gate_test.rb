@@ -2,6 +2,7 @@
 
 require_relative '../test_helper'
 require_relative '../../lib/07/gate'
+require_relative '../../lib/07/ticket'
 
 class GateTest < Minitest::Test
   def test_gate_umeda_to_juso
