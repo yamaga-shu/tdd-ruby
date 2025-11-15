@@ -1,0 +1,8 @@
+# TypeProf 0.31.0
+
+# lib/07/gate.rb
+class Gate
+  def initialize: (String) -> void
+  def enter: (Ticket) -> nil
+  def exit: (Ticket) -> bool
+end

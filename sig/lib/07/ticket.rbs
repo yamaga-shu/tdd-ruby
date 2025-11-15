@@ -1,0 +1,6 @@
+# TypeProf 0.31.0
+
+# lib/07/ticket.rb
+class Ticket
+  def initialize: (Integer) -> void
+end

@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
+# Gate represents a Station's Gate
+# which checks if it is possible to go through with a Ticket.
 class Gate
-  #: (String) -> void
   def initialize(name)
     @name = name
   end
